@@ -1,0 +1,695 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #333232;
+    color: #fdfdfd;
+}
+
+/* sidebar */
+#wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(110vh - 10vh);
+}
+
+#sidebar {
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#sidebar .sidebar-navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar .sidebar-navigation > li{
+    background-color: #333232;
+    width: 50px;
+}
+
+.iconify {
+    color: #fdfdfd;
+}
+
+#iconify-arrow {
+    color: #000000;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    color: #fdfdfd;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px;
+}
+
+.nav-link.active {
+    background-color: #8E8E8E;
+}
+
+/* design easy to use */
+.text-center {
+    text-align: center;
+}
+
+/* universal className */
+.title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* modal portofolio */
+
+.card {
+    max-width: 50%;
+    height: auto;
+    
+}
+
+.card h3.section {
+    padding: 20px;
+    width: auto;
+}
+
+.card p.section {
+    padding: 20px;
+    width: auto;
+    height: 100%;
+}
+
+.card-footer {
+    padding: 10px;
+}
+
+.card-footer button {
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: #C4C4C4;
+    border-radius: 50px;
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card-footer .iconify {
+    color: #000000;
+}
+
+/* home */
+#home {
+    display: block;
+    margin: auto;
+    flex-grow: 9;
+    padding: 20px;
+}
+
+.welcome {
+    font-size: 64px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#button-journey {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 100px;
+    bottom: -100px;
+}
+
+#button-journey button {
+    font-size: 20px;
+    border-radius: 80px;
+    padding: 10px 20px;
+    outline: 0;
+    color: #000000;
+}
+
+#button-journey button:hover {
+    cursor: pointer;
+}
+
+#button-journey button span {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* about me */
+#about {
+    display: block;
+    flex-grow: 9;
+    padding: 20px;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+#description {
+    margin-top: 40px;
+}
+
+.hobby {
+    display: flex;
+}
+
+.hobby .iconify {
+    width: 24px;
+    height: 24px;
+}
+
+.image {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.profile .profile-text {
+    display: flex;
+    padding: 10px 0;
+}
+
+/* education */
+#education {
+    display: block;
+    flex-grow: 9;
+    padding: 20px;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.education-description {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.education-description .school-profile {
+    flex-grow: 10;
+}
+
+.school-row .school-year, .school-row .school-name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 8px;
+}
+
+.school-row .school-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Skill */
+#skill {
+    display: block;
+    flex-grow: 9;
+    padding: 20px;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.skill-description {
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+.skill-description .skill-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fdfdfd;
+}
+
+.title-line {
+    border: 1px solid #FDFDFD;
+}
+
+.skill-bar {
+    margin: 32px 0 0 32px;
+}
+
+.empty-bar {
+    background-color: #ECECEC;
+    width: 100%;
+    height: 22px;
+}
+
+.fill-bar {
+    position: relative;
+    top: -22.4px;
+    left: 0;
+    background-color: #81E470;
+    height: 22px;
+}
+
+.fill-10 {
+    width: 10%;
+}
+
+.fill-20 {
+    width: 20%;
+}
+
+.fill-30 {
+    width: 30%;
+}
+
+.fill-40 {
+    width: 40%;
+}
+
+.fill-50 {
+    width: 50%;
+}
+
+.fill-60 {
+    width: 60%;
+}
+
+.fill-70 {
+    width: 70%;
+}
+
+.fill-80 {
+    width: 80%;
+}
+
+.fill-90 {
+    width: 90%;
+}
+
+.fill-100 {
+    width: 100%;
+}
+
+/* portofolio */
+#portofolio {
+    display: block;
+    flex-grow: 9;
+    justify-content: end;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+.portofolio-description {
+    margin-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.portofolio-description .row div:only-child {
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card-me {
+    width: 314px;
+    height: 10rem;
+}
+
+.card-body-me {
+    display: block;
+    text-align: center;
+    border: 1px solid #fdfdfd;
+    background-color: #fdfdfd;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    height: 50%;
+    width: auto;
+}
+
+.card-body-me > span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card-footer-me {
+    width: 341px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer-me button {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    left: -13px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #656363;
+    color: #fdfdfd;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* contact */
+#contact {
+    display: block;
+    flex-grow: 9;
+    padding: 20px;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.contact-description {
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+#form-contact {
+    background-color: #333232;
+    color: #fdfdfd;
+    border: 2px solid #5C5C5C;
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+#form-contact fieldset {
+    /* border: 1px solid #5C5C5C; */
+    border: 0;
+}
+
+#form-contact input, #form-contact textarea {
+    display: block;
+    width: 100%;
+    background-color: #333232;
+    color: #fdfdfd;
+    border: 0;
+    border: 2px solid #5C5C5C;
+    border-radius: 10px;
+    outline: 0;
+}
+
+#form-contact textarea {
+    resize: none;
+}
+
+#form-contact label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+#form-contact [type="submit"] {
+    background-color: #5B5B5B;
+    border: 2px solid #5C5C5C;
+    border-radius: 10px;
+    color: #fdfdfd;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    height: 50px;
+}
+
+#form-contact .form-group {
+    margin-top: 15px;
+    width: 100%;
+}
+
+#social-media {
+    text-align: center;
+}
+
+#social-media .iconify {
+    width: 50px;
+    height: 50px;
+}
+
+#social-media .row > div {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+#social-media .row > div:hover {
+    background-color: #474747;
+    cursor: pointer;
+}
+
+#quote {
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#quote .quote-say {
+    margin-top: 20px;
+}
+
+
+/* mobile S - 320px */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .welcome {
+        font-size: 3px;
+    }
+
+    /* about me */
+    .image {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .card-footer-me {
+        width: 241px;
+    }
+
+    .card-footer-me button {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 241px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    #portofolio {
+        display: block;
+    }
+}
+
+/* mobile M - 375px */
+@media only screen and (max-width: 375px) and (max-width: 425px) {
+    .welcome {
+        font-size: 32px;
+    }
+}
+
+/* mobile L - 425px */
+@media only screen and (max-width: 425px) {
+    .welcome {
+        font-size: 32px;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    .sidebar-collapse {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .sidebar-collapse > .iconify {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact-description {
+        padding: 0;
+    }
+
+    .card-footer-me {
+        width: 241px;
+    }
+
+    /* education */
+    .school-row .school-year, .school-row .school-name {
+        font-size: 16px;
+    }
+
+    .school-row .school-description {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+
+    /* modal portofolio */
+    .card {
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* contact form */
+    #form-contact {
+        width: 100%;
+        padding: 0;
+    }
+
+    #form-contact label {
+        font-size: 12px;
+    }
+
+    #form-contact input, #form-contact textarea {
+        /* padding: 0; */
+        font-size: 12px;
+    }
+
+    #form-contact button {
+        width: 2%;
+    }
+
+    #form-contact .container button {        
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        font-size: 14px;
+
+    }
+
+
+    
+    /* .card h3.section {
+        padding: 20px;
+        width: auto;
+    }
+    
+    .card p.section {
+        padding: 20px;
+        width: auto;
+        height: 100%;
+    }
+    
+    .card-footer {
+        padding: 10px;
+    }
+    
+    .card-footer button {
+        display: block;
+        margin: auto;
+        width: 50%;
+        background-color: #C4C4C4;
+        border-radius: 50px;
+        color: #000000;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .card-footer .iconify {
+        color: #000000;
+    } */
+}
+
+/* tablet L - 768px */
+@media only screen and (max-width: 425px) and (max-width: 768px) {
+    .welcome {
+        font-size: 32px;
+    }
+
+    /* about me */
+    .image {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .card-me {
+        width: 214px;
+        height: 10rem;;
+    }
+
+    .card-footer-me {
+        width: 113%;
+        height: 58px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-footer-me button {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: -20px;
+        left: -13px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #656363;
+        color: #fdfdfd;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+/* tablet L - 1024px */
+@media only screen and (max-width: 1024px) {
+    .welcome {
+        font-size: 32px;
+    }
+
+    /* about me */
+    .image {
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    
+}
